@@ -1,5 +1,8 @@
+#include <iostream>
 #include <vector>
-#include <stdio>
+#include <cstdarg>
+#include <string>
+using namespace std;
 
 class Solution{
 public:
@@ -18,4 +21,11 @@ public:
 		return result;
 	}
 };
-//fucking test
+
+int main()
+{
+    /* code */
+    
+    system("pause");
+    return 0;
+}
