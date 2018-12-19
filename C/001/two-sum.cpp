@@ -1,3 +1,5 @@
+#include <vector>
+#include <stdio>
 
 class Solution{
 public:
