@@ -24,7 +24,7 @@ public:
 
 int main(){
     /* code */
-    vector<int> testnums[4]={2,7,11,15};
+    vector<int> testnums(2,7,11,15);
     int testtarget=9;
     Solution test;
     vector<int> testresult; 
