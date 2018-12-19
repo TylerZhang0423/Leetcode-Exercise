@@ -25,7 +25,6 @@ public:
 int main()
 {
     /* code */
-    
-    system("pause");
+    cout<<"test"<<endl;
     return 0;
 }
