@@ -22,9 +22,13 @@ public:
 	}
 };
 
-int main()
-{
+int main(){
     /* code */
-    cout<<"test"<<endl;
+    vector<int> testnums[4]={2,7,11,15};
+    int testtarget=9;
+    Solution test;
+    vector<int> testresult; 
+    testresult=test.twoSum(testnums,testtarget);
+    cout<<testresult[0]<<endl;
     return 0;
 }
