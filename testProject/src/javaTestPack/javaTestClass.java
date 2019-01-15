@@ -7,4 +7,9 @@ public class javaTestClass {
 		System.out.println("fuck");
 	}
 
+	@Override
+	public String toString() {
+		return "javaTestClass [toString()=" + super.toString() + "]";
+	}
+
 }
