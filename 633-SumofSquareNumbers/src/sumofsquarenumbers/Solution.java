@@ -11,7 +11,16 @@ package sumofsquarenumbers;
 
 public class Solution {
     public boolean judgeSquareSum(int c) {
-        //for (int i=0,j=Math.sqrt((double)c);)
-    	return true;
+    	double temp=Math.ceil(Math.sqrt(c));//ceil 向上取整
+    	int midnum=(int) temp;
+    	int i=0;
+        for (;i<=midnum;i++) {
+        	for (int j=i;j<=midnum;j++) {
+        		if (i*i+j*j==c||i*i*2==c) {
+        			return true;
+        		}
+        	}
+        }
+    	return false;
     }
 }
