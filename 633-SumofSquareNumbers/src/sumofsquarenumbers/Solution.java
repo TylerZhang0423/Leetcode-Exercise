@@ -16,7 +16,7 @@ public class Solution {
     	int i=0;
         for (;i<=midnum;i++) {
         	for (int j=i;j<=midnum;j++) {
-        		if (i*i+j*j==c||i*i*2==c) {
+        		if (i*i+j*j==c) {
         			return true;
         		}
         	}
