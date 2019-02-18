@@ -14,7 +14,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		int testSolution=1690;
+		int testSolution=16;
 		Solution Test=new Solution();
 		System.out.println(Test.nthUglyNumber(testSolution));
 	}
