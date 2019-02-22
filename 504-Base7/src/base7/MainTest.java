@@ -15,6 +15,6 @@ public class MainTest {
 		// TODO 自动生成的方法存根
 		int testSolution=100;
 		Solution Test=new Solution();
-		System.out.println(Test.convertToBase7(testSolution));
+		System.out.println(Test.convertToBase7(testSolution));//输出“202”
 	}
 }

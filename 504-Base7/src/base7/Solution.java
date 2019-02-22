@@ -11,6 +11,16 @@ package base7;
 import java.util.Stack ;
 public class Solution {
     public String convertToBase7(int num) {
-        Stack<Integ> stack=new Stack<>();
+        Stack<Integer> stack=new Stack<>();
+        String result="";
+        while (num>0) {
+        	stack.push(num%7);
+        	num=num/7;
+        }
+        while (!stack.empty()) {
+        	result=result.concat(String.valueOf(stack.peek()));
+        	stack.pop();
+        }
+        return result;
     }
 }
