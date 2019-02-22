@@ -27,7 +27,8 @@ public class Solution {
         	}
         }else if (num<0) {
         	result=result.concat("-");
-        	while (num<0) {
+            num=-num;
+        	while (num>0) {
         		stack.push(num%7);
         		num=num/7;
         	}
@@ -35,8 +36,7 @@ public class Solution {
         		result=result.concat(String.valueOf(stack.peek()));
         		stack.pop();
         	}
-        }
-        
+        }      
         return result;
     }
 }
