@@ -29,7 +29,13 @@ public class Solution {
         while (true) {
         	int mid=(int)Math.ceil((maxBound+minBound)/2);
         	if (mid==maxBound||mid==minBound) {
-        		return -1;
+        		if (target==nums[maxBound]) {
+        			return maxBound;
+        		}else if (target==nums[minBound]){
+        			return minBound;
+        		}else {
+        			return -1;
+        		}
         	}
         	if (nums[mid]==target) {
         		return mid;
