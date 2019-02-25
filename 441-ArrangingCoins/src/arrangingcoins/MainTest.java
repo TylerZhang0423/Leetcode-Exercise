@@ -25,6 +25,6 @@ public class MainTest {
 		// TODO Auto-generated method stub
 		int testSolution=8;
 		Solution Test=new Solution();
-		System.out.println(Test.arrangeCoins(testSolution));
+		System.out.println(Test.arrangeCoins(testSolution));//ÊäÈën=8,Êä³ö3
 	}
 }
