@@ -30,7 +30,7 @@ public class Solution {
     		}
     	}
     	while (!stack.isEmpty()) {
-    		if (flag<4) {
+    		if (flag<K) {
     			if (stack.peek()>=97) {
     				result=String.valueOf((char)(stack.peek()-32))+result;
     			}else {
