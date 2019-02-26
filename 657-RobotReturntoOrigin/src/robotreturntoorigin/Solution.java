@@ -17,9 +17,28 @@
 //解释：机器人向左移动两次。它最终位于原点的左侧，距原点有两次 “移动” 的距离。
 //我们返回 false，因为它在移动结束时没有返回原点。
 package robotreturntoorigin;
-
+import java.util.Stack ;
 public class Solution {
     public boolean judgeCircle(String moves) {
-        
+    	Stack<Character> stackU = new Stack<Character>();
+    	Stack<Character> stackD = new Stack<Character>();
+    	Stack<Character> stackL = new Stack<Character>();
+    	Stack<Character> stackR = new Stack<Character>();
+    	for (int i=0;i<moves.length();i++) {
+    		if (moves.charAt(i)=='U') {
+    			stackU.push(moves.charAt(i));
+    		}else if (moves.charAt(i)=='D') {
+    			stackD.push(moves.charAt(i));
+    		}else if (moves.charAt(i)=='L') {
+    			stackL.push(moves.charAt(i));
+    		}else {
+    			stackR.push(moves.charAt(i));
+    		}
+    	}
+    	if (stackU.size()==stackD.size()&&stackL.size()==stackR.size()) {
+    		return true;
+    	}else {
+    		return false;
+    	}
     }
 }
