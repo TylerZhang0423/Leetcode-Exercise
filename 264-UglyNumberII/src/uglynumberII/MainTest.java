@@ -14,8 +14,10 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
+		long a=System.currentTimeMillis();
 		int testSolution=10;
 		Solution Test=new Solution();
 		System.out.println(Test.nthUglyNumber(testSolution));
+		System.out.println("\r<br>执行耗时 : "+(System.currentTimeMillis()-a)/1000f+" 秒 ");
 	}
 }
