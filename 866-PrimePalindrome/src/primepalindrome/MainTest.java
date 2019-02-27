@@ -22,7 +22,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int TESTSOLUTION=9989900;
+		int TESTSOLUTION=1;
 		Solution Test=new Solution();
 		System.out.println(Test.primePalindrome(TESTSOLUTION));
 	}

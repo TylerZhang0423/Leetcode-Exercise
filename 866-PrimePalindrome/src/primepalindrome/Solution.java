@@ -24,24 +24,24 @@ public class Solution {
             if (isPrime(N)&&isPalindrome(N)) {
                 return N;
             }else {
-                N++;
+            	N++;
             }
         }
     }
-    public boolean isPrime(int m) {
-        if (m<2||m==4) {
-    		return false;
-    	}else if (m==2||m==3) {
-    		return true;
-    	}else {
-    		for (int i=2;i*i<=m;i++) {
-    			if (m%i==0) {
-    				return false;
-    			}
-    		}
-    	}
-    	return true;
-    }
+	public boolean isPrime(int num) {
+		if (num==2||num==3) {
+			return true;
+		}else if((num%6!=1&&num%6!=5)||num==1||num%2==0||num%3==0){
+			return false;
+		}else {
+			for (int i=5;i*i<=num;i=i+6) {
+				if (num%i==0||num%(i+2)==0) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
     public boolean isPalindrome(int x) {
     	int length=0;
     	int temp=x;
