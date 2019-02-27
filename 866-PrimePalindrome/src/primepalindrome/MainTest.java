@@ -22,8 +22,10 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int TESTSOLUTION=1;
+		long a=System.currentTimeMillis();
+		int TESTSOLUTION=9989900;
 		Solution Test=new Solution();
 		System.out.println(Test.primePalindrome(TESTSOLUTION));
+		System.out.println("Ö´ÐÐºÄÊ± : "+(System.currentTimeMillis()-a)/1000f+" Ãë ");
 	}
 }

@@ -17,45 +17,60 @@
 //1 <= N <= 10^8
 //答案肯定存在，且小于 2 * 10^8。
 package primepalindrome;
-
+//主要思路：判断素数和判断回文数的函数直接使用之前的接口
+//额外添加优化：偶数位的回文数，由于奇数位之和与偶数位之和相等，因此一定能被11整除，因此直接跳过所有偶数位数
 public class Solution {
     public int primePalindrome(int N) {
+    	if (N<=2) {
+    		return 2;
+    	}
+    	if (N==3) {
+    		return 3;
+    	}
+    	if (N>11&&getLength(N)%2==0){
+    		N=(int) (Math.pow(10, getLength(N))+1);
+    	}
+    	if (N%6==2) {
+    		N=N+3;
+    	}else if (N%6==3) {
+    		N=N+2;
+    	}else if (N%6==4) {
+    		N=N+1;
+    	}else if (N%6==0) {
+    		N=N+1;
+    	}
         while (true) {
+        	if (N>11&&getLength(N)%2==0){
+        		N=(int) (Math.pow(10, getLength(N))+1);
+        	}
             if (isPrime(N)&&isPalindrome(N)) {
                 return N;
             }else {
-            	N++;
+            	if (N%6==1) {
+            		N=N+4;
+            	}else if (N%6==5) {
+            		N=N+2;
+            	}        		
             }
         }
     }
 	public boolean isPrime(int num) {
-		if (num==2||num==3) {
-			return true;
-		}else if((num%6!=1&&num%6!=5)||num==1||num%2==0||num%3==0){
-			return false;
-		}else {
-			for (int i=5;i*i<=num;i=i+6) {
-				if (num%i==0||num%(i+2)==0) {
-					return false;
-				}
+		for (int i=5;i*i<=num;i=i+6) {
+			if (num%i==0||num%(i+2)==0) {
+				return false;
 			}
 		}
 		return true;
 	}
     public boolean isPalindrome(int x) {
-    	int length=0;
-    	int temp=x;
-    	while (temp>0) {
-    		length++;
-    		temp=temp/10;
-    	}
-    	int[] numarray=new int[length];
-    	for (int k=length-1;k>=0;k--) {
+    	int numLength=getLength(x);
+    	int[] numarray=new int[numLength];
+    	for (int k=numLength-1;k>=0;k--) {
     		numarray[k]=x%10;
     		x=x/10;
     	}
         int i=0;
-        int j=length-1;
+        int j=numLength-1;
         while (i<j) {
         	if (numarray[i]!=numarray[j]) {
         		return false;
@@ -64,5 +79,13 @@ public class Solution {
         	j--;
         }
         return true;
+    }
+    public int getLength(int m) {
+    	int length=0;
+    	while (m>0) {
+    		length++;
+    		m=m/10;
+    	}
+    	return length;
     }
 }
