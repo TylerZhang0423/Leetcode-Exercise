@@ -10,7 +10,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		int testSolution=15;//2,3,5,7,11,13
+		int testSolution=10;//2,3,5,7,11,13
 		Solution Test=new Solution();
 		System.out.print("小于 10 的质数一共有 "+Test.countPrimes(testSolution)+" 个");
 	}
