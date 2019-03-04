@@ -15,7 +15,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] testArrays= {1,2,3,4};
+		int[] testArrays= {-1,-2,-3};
 		Solution Test=new Solution();
 		System.out.println(Test.maximumProduct(testArrays));
 	}
