@@ -27,7 +27,7 @@ public class Solution {
     	}
     	int flag=0;
         for (int i=0;i<A.length-1;i++) {
-        	if (A[i]<=A[i+1]) {
+        	if (A[i]<A[i+1]) {
         		continue;
         	}else {
         		flag=i;
@@ -38,7 +38,7 @@ public class Solution {
         	return false;
         }else {
         	for (int i=flag;i<A.length-1;i++) {
-        		if (A[i]<A[i+1]) {
+        		if (A[i]<=A[i+1]) {
         			return false;
         		}
         	}
