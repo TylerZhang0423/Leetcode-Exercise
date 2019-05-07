@@ -37,7 +37,7 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String testString="-+1";
+		String testString="4193 with words";
 		Solution Test=new Solution();
 		System.out.println(Test.myAtoi(testString));
 	}

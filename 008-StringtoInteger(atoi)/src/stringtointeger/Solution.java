@@ -36,60 +36,72 @@ import java.util.*;
 public class Solution {
     public int myAtoi(String str) {
     	str=str.trim();
+    	//长度为0的
         if (str.equals("")) {
     		return 0;
     	}
-    	if (str.length()==1&&(str.charAt(0)<'0'||str.charAt(0)>'9')) {
-    		return 0;
-    	}
-        
-        int flag=0;
-        List<Character> result=new ArrayList<Character>();
-        if ((str.charAt(0)<'0'||str.charAt(0)>'9')&&(str.charAt(0)!='-')) {
+        //长度为1的
+        if (str.length()==1&&(str.charAt(0)<'0'||str.charAt(0)>'9')) {
         	return 0;
         }
-        if (str.charAt(0)=='-') {
-        	flag=1;
+        //长度大于1的
+        List<Character> result=new ArrayList<Character>();
+        if (str.charAt(0)=='+'||str.charAt(0)=='-') {
+        	//带有符号位
+        	result.add(str.charAt(0));
         	for (int i=1;i<str.length();i++) {
-        		if (str.charAt(i)>'9'||str.charAt(i)<'0') {
+        		if (str.charAt(i)<='9'&&str.charAt(i)>='0') {
+        			result.add(str.charAt(i));
+        		}else {
         			break;
         		}
-        		result.add(str.charAt(i));
         	}
-        }else if (str.charAt(0)=='+') {
-        	flag=2;
-        	for (int i=1;i<str.length();i++) {
-        		if (str.charAt(i)>'9'||str.charAt(i)<'0') {
+        }else if (str.charAt(0)>='0'&&str.charAt(0)<='9') {
+        	//不带符号位的数字
+        	for (int i=0;i<str.length();i++) {
+        		if (str.charAt(i)<='9'&&str.charAt(i)>='0') {
+        			result.add(str.charAt(i));
+        		}else {
         			break;
         		}
-        		result.add(str.charAt(i));
         	}
         }else {
-        	for (int i=0;i<str.length();i++) {
-        		if (str.charAt(i)>'9'||str.charAt(i)<'0') {
-        			break;
-        		}
-        		result.add(str.charAt(i));
-        	}
+        	//无效串
+        	return 0;
         }
-        String res="";
-        for (int i=0;i<result.size();i++) {
-        	res=res+result.get(i);
-        }
-        if (flag==1) {
-        	long temp=-Long.parseLong(res);
-        	if (temp<Integer.MIN_VALUE) {
-        		return Integer.MIN_VALUE;
-        	}else {
-        		return (int)temp;
-        	}
-        }else  {
-        	long temp=Long.parseLong(res);
-        	if (temp>Integer.MAX_VALUE) {
-        		return Integer.MAX_VALUE;
-        	}else {
-        		return (int)temp;
-        	}
-        }
+    	return toNum(result);
+    }
+    
+    
+    public int toNum(List<Character> c) {
+    	if (c.size()==0) {
+    		return 0;
+    	}
+    	long temp=0;
+    	if (c.get(0)=='-') {
+    		for (int j=1;j<=c.size()-1;j++) {
+    			temp=temp*10+(int)c.get(j)-48;
+    			if (temp>Integer.MAX_VALUE) {
+    				return Integer.MIN_VALUE;
+    			}
+    		}
+    		return -(int)temp;
+    	}else if (c.get(0)=='+') {
+    		for (int j=1;j<=c.size()-1;j++) {
+    			temp=temp*10+(int)c.get(j)-48;
+    			if (temp>Integer.MAX_VALUE) {
+    				return Integer.MAX_VALUE;
+    			}
+    		}
+    		return (int)temp;
+    	}else {
+    		for (int j=0;j<=c.size()-1;j++) {
+    			temp=temp*10+(int)c.get(j)-48;
+    			if (temp>Integer.MAX_VALUE) {
+    				return Integer.MAX_VALUE;
+    			}
+    		}
+    		return (int)temp;
+    	}
     }
 }
