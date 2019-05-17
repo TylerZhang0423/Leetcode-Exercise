@@ -18,19 +18,20 @@
 package shiftingletters;
 
 public class Solution {
-    public String shiftingLetters(String S, int[] shifts) {
-        for (int i=0;i<shifts.length;i++) {
-        	S=shift(S.substring(0, i+1),shifts[i])+S.substring(i, S.length()-1);
-        }
-        return S;
-    }
-
-	private String shift(String subString, int i) {
-		char[] subStringCharArr=subString.toCharArray();
-		for (int j=0;j<subStringCharArr.length;j++) {
-			subStringCharArr[j]=(char)(subStringCharArr[j]+i);
+	public String shiftingLetters(String S, int[] shifts) {
+		char[] charArrayOfS=S.toCharArray();
+		for (int i=0;i<charArrayOfS.length;i++) {
+			long value=0;
+			for (int j=i;j<shifts.length;j++) {
+				value=value+shifts[j];
+			}
+			value=value%26;			
+			if (value+charArrayOfS[i]>122) {
+				charArrayOfS[i]=(char)(charArrayOfS[i]+value-26);
+			}else {
+				charArrayOfS[i]=(char)(charArrayOfS[i]+value%26);
+			}
 		}
-		subString=String.valueOf(subStringCharArr);
-		return subString;
+		return String.valueOf(charArrayOfS);
 	}
 }

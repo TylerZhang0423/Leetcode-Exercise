@@ -21,8 +21,8 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String testString="abc";
-		int[] testArray={3,5,9};
+		String testString="ruu";
+		int[] testArray={26,9,17};
 		Solution Test=new Solution();
 		System.out.println(Test.shiftingLetters(testString, testArray));
 	}
