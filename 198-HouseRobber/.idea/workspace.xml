@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59ffbc42-2c9d-4486-985c-c2eddd924805" name="Default Changelist" comment="" />
+    <list default="true" id="9295425d-7d92-41ca-8872-da6578a0b07e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../070-ClimbingStairs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../070-ClimbingStairs/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,24 +18,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/climbingstairs/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/houserobber/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="330">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding>
-                <element signature="e#0#382#0" expanded="true" />
+                <element signature="e#0#518#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/climbingstairs/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/houserobber/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="435">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
-                <element signature="e#0#968#0" expanded="true" />
+                <element signature="e#0#485#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +56,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/climbingstairs/Main.java" />
-        <option value="$PROJECT_DIR$/src/climbingstairs/Solution.java" />
+        <option value="$PROJECT_DIR$/src/houserobber/Main.java" />
+        <option value="$PROJECT_DIR$/src/houserobber/Solution.java" />
       </list>
     </option>
   </component>
@@ -71,35 +73,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="070-ClimbingStairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="070-ClimbingStairs" type="462c0819:PsiDirectoryNode" />
+              <item name="198-HouseRobber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="198-HouseRobber" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="070-ClimbingStairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="070-ClimbingStairs" type="462c0819:PsiDirectoryNode" />
+              <item name="198-HouseRobber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="198-HouseRobber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="070-ClimbingStairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="070-ClimbingStairs" type="462c0819:PsiDirectoryNode" />
+              <item name="198-HouseRobber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="198-HouseRobber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="climbingstairs" type="462c0819:PsiDirectoryNode" />
+              <item name="houserobber" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,8 +113,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="climbingstairs.Main" />
-      <module name="070-ClimbingStairs" />
+      <option name="MAIN_CLASS_NAME" value="houserobber.Main" />
+      <module name="198-HouseRobber" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -135,11 +133,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59ffbc42-2c9d-4486-985c-c2eddd924805" name="Default Changelist" comment="" />
-      <created>1564833185741</created>
+      <changelist id="9295425d-7d92-41ca-8872-da6578a0b07e" name="Default Changelist" comment="" />
+      <created>1564839361563</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1564833185741</updated>
+      <updated>1564839361563</updated>
     </task>
     <servers />
   </component>
@@ -157,7 +155,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
@@ -175,35 +173,23 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/climbingstairs/Main.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/climbingstairs/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/houserobber/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="330">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding>
-            <element signature="e#0#382#0" expanded="true" />
+            <element signature="e#0#518#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/climbingstairs/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/houserobber/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="435">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
-            <element signature="e#0#968#0" expanded="true" />
+            <element signature="e#0#485#0" expanded="true" />
           </folding>
         </state>
       </provider>
